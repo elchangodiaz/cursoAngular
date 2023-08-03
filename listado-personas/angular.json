@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mi-primera-app": {
+    "listado-personas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mi-primera-app",
+            "outputPath": "dist/listado-personas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -29,7 +29,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
             ]
           },
           "configurations": {
@@ -63,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mi-primera-app:build:production"
+              "browserTarget": "listado-personas:build:production"
             },
             "development": {
-              "browserTarget": "mi-primera-app:build:development"
+              "browserTarget": "listado-personas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mi-primera-app:build"
+            "browserTarget": "listado-personas:build"
           }
         },
         "test": {
@@ -99,6 +101,6 @@
     }
   },
   "cli": {
-    "analytics": "6e40a118-ab7c-4a88-a243-e4d08fe4a80c"
+    "analytics": "fb6ef84f-49ea-487d-9d1b-edfb4fb63798"
   }
 }
